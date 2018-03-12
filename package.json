@@ -4,14 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev:server": "nodemon --harmony --inspect=127.0.0.1:9227 build/index.js",
-    "start:dev": "yarn build && concurrently 'yarn build:watch:skip' 'yarn start:dev:server'",
-    "start": "yarn build && node build/index.js",
-    "build": "rm -rf build && babel src -d build && find build -size 0 -delete",
-    "build:watch": "babel src -d build --watch",
-    "build:watch:skip": "babel src -d build --watch --skip-initial-build",
-    "test": "yarn build && jest --forceExit",
-    "test:watch": "yarn build && jest --watch"
+    "start:dev": "nodemon --harmony --inspect=127.0.0.1:9227 src/index.js",
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,19 +22,10 @@
   },
   "homepage": "https://github.com/mandeba/MyFirstApp#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
     "express": "^4.16.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
-    "babel-preset-env": "^1.6.1",
-    "concurrently": "^3.5.1",
     "jest": "^22.1.4",
     "nodemon": "^1.14.11"
   }
-
 }
