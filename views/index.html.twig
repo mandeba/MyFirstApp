@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Mandus first webapp</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />    
+    </head>
+    <body>
+        <h1>Mandus first webapp</h1>
+        {% if name is defined and name is not null %}
+            <p>
+                Welcome {{ name }}! 
+            </p>
+        {% endif %}
+        {% if names is defined and names is not null %}
+            <p>And the rest of you!</p>
+            <ul>
+            {% for name in names %}
+                <li>{{ name }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}       
+    </body>
+</html>
