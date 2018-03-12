@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/mandeba/MyFirstApp#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "twig": "^1.10.5"
   },
   "devDependencies": {
     "jest": "^22.1.4",
