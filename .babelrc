@@ -1,0 +1,29 @@
+{
+    "presets": [
+      ["env", {
+        "targets": {
+          "node": "current"
+        }
+      }]
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "env": {
+      "development": {
+        "ignore": [
+          "__mocks__",
+          "__tests__"
+        ]
+      },
+      "production": {
+        "ignore": [
+          "__mocks__",
+          "__tests__"
+        ]
+      },
+      "test": {
+        "ignore": []
+      }
+    }
+  }
+ 
