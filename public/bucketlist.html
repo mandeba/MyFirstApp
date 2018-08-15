@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#map {
+			height: 500px;
+			width: 100%;
+		}
+
+	</style>	
+	<body>
+		<div id="map"></div>
+
+
+
+		<a href="http://www.avanza.se">Avanza</a>
+
+		<script>
+			function initMap() {
+				var locationAus = {lat: -25.363, lng: 131.044};
+				var location = {lat: 59.3240, lng: 18.0711};
+				var locationHel = {lat: 60.1677, lng: 24.9293};
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 4,
+					center: location
+				});
+
+				var marker = new google.maps.Marker({
+					position: location,
+					map: map,
+					title: 'Stockholm'
+				});
+				var markerHel = new google.maps.Marker({
+					position: locationHel,
+					map: map,
+					title: 'Helsinki'
+				});
+
+			}
+			//AIzaSyBGuuwiXcLmtTsKacjr-OOaLtCFVIdVMiY
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGuuwiXcLmtTsKacjr-OOaLtCFVIdVMiY&callback=initMap"></script>
+		<script>
+		
+		</script>
+	</body>
+</html>
+
