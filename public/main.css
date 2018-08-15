@@ -1,3 +1,18 @@
 body {
     color: blue;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#mapDiv {
+    height: 500px;
+    width: 100%;
+}
+#headDiv {
+    height: 70px;
+    width: 100%;
+    font-size: 30px;
+}
